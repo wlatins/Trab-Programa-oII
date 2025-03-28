@@ -1,0 +1,26 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "Trabalho Prático I: Desenvolvimento de um Microsserviço de Timestamp",
+  "main": "myTimestamp.js",
+  "scripts": {
+    "start": "node myTimestamp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlatins/Trab-Programa-oII.git"
+  },
+  "keywords": [
+    "timestamp",
+    "microsserviço"
+  ],
+  "author": "walter santa cruz júnior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlatins/Trab-Programa-oII/issues"
+  },
+  "homepage": "https://github.com/wlatins/Trab-Programa-oII#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
