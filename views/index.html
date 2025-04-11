@@ -1,22 +1,44 @@
 <!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
 <html>
 
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar acentuação e caracteres especiais -->
     <meta charset='utf-8'>
+
+    <!-- Compatibilidade com navegadores mais antigos como Internet Explorer -->
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <!-- Título da página exibido na aba do navegador -->
     <title>Microsserviço de Timestamp</title>
+
+    <!-- Configura a visualização para dispositivos móveis (responsividade) -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Importa o arquivo CSS externo para estilização da página -->
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <!-- Importa o arquivo JavaScript externo responsável pela lógica de envio dos formulários -->
     <script src='main.js'></script>
 </head>
 
 <body>
+    <!-- Seção principal do microsserviço de Timestamp -->
     <div class="timestamp">
         <h1>Microsserviço de Timestamp</h1>
+
+        <!-- Formulário para envio de uma data e escolha de fuso horário -->
+        <!-- Ao ser enviado, chama a função updateUrl(event) definida no main.js -->
         <form onsubmit="updateUrl(event)">
+            <!-- Campo para o usuário digitar uma data -->
             <input type="text" id="date" value="" placeholder="Insira a Data">
+
+            <!-- Menu suspenso para escolha do fuso horário (obrigatório) -->
             <select id="fusohorario" required="required">
+                <!-- Opção padrão para indicar que o usuário deve escolher -->
                 <option value="">Escolha um Fuso-Horário</option>
+
+                <!-- Lista de opções de UTC de -12 até +12 com seus respectivos valores -->
                 <option value="-12">UTC -12:00</option>
                 <option value="-11">UTC -11:00</option>
                 <option value="-10">UTC -10:00</option>
@@ -43,15 +65,26 @@
                 <option value="11">UTC +11:00</option>
                 <option value="12">UTC +12:00</option>
             </select>
+
+            <!-- Botão para submeter o formulário -->
             <input type="submit" value="Enviar">
         </form>
     </div>
+
+    <!-- Seção para calcular a diferença entre duas datas -->
     <div class="Diferença de Datas">
         <h1>Calcular a diferença entre duas datas</h1>
+
+        <!-- Formulário para calcular a diferença entre duas datas -->
+        <!-- Ao ser enviado, chama a função updateUrl2(event) definida no main.js -->
         <form onsubmit="updateUrl2(event)">
+            <!-- Campo para a primeira data -->
             <input type="text" id="date1" value="" placeholder="Insira a Data 1">
             -
+            <!-- Campo para a segunda data -->
             <input type="text" id="date2" value="" placeholder="Insira a Data 2">
+
+            <!-- Botão para calcular a diferença -->
             <input type="submit" value="Calcular">
         </form>
     </div>
