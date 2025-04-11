@@ -1,6 +1,6 @@
 # Trab-Programa-oII
 Trabalho Prático I: Desenvolvimento de um Microsserviço de Timestamp
-Se quiser colocar uma data em utc, coloca ela em MM-DD-YYYY-TT:TT ou em YYYY-MM-DD_TT:TT, não vai funcionar com DD-MM-YYYY, qualquer coisa, tem como colocar dessa forma pra aceitar DD-MM-YYYY (peguei essa parte do chat, pois estou com preguiça pq to fazendo isso na madrugada da sexta do dia 11/04):
+Se quiser colocar uma data em utc, coloca ela em MM-DD-YYYY TT:TT:TT ou em YYYY-MM-DD TT:TT:TT, não vai funcionar com DD-MM-YYYY, qualquer coisa, tem como colocar dessa forma pra aceitar DD-MM-YYYY (peguei essa parte do chat, pois estou com preguiça pq to fazendo isso na madrugada da sexta do dia 11/04):
 
 app.get("/api/:date", function (req, res) {
   const { date } = req.params;

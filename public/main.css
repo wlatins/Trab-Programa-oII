@@ -1,1 +1,122 @@
-/* nao tem nada aqui */
+/* Resetando o body */
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container principal para alinhar as divs lado a lado */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo da .timestamp */
+.timestamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 30rem;
+    height: 25rem;
+    padding: 20px;
+}
+
+/* Estilo da .diff */
+.diff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 35rem;
+    height: 25rem;
+    padding: 20px;
+}
+
+/* Estilo do h1 */
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #E91E63ed;
+}
+
+/* Estilo do input e select */
+input, select {
+    display: flex;
+    justify-content: column;
+    margin: auto;
+}
+
+/* Estilo do input .pipoca */
+.pipocasalgada {
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: .2em solid #E91E63;
+    background: rgba(#E91E63, .2);
+    border-radius: .2em .2em 0 0;
+    padding: .4em;
+    color: #E91E63;
+    padding: 6px;
+    width: 275px;
+    margin-top: 9%;
+    font-family: "Poppins", sans-serif;
+}
+
+.pipocadoce{
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: .2em solid #E91E63;
+    background: rgba(#E91E63, .2);
+    border-radius: .2em .2em 0 0;
+    padding: .4em;
+    color: #E91E63;
+    padding: 6px;
+    width: 275px;
+    margin-top: 9%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #E91E63ed;
+}
+
+/* Estilo do select */
+select {
+    margin-top: 5%;
+    background-color: #E91E63ed;
+    color: white;
+    padding: 6px;
+    width: 282px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do botão */
+.botao {
+    margin-top: 10%;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 25px;
+    background-color: #E91E63ed;
+    color: white;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
