@@ -4,7 +4,7 @@
   "description": "Trabalho Prático I: Desenvolvimento de um Microsserviço de Timestamp",
   "main": "myTimestamp.js",
   "scripts": {
-    "start": "node myTimestamp.js"
+    "start": "node --watch myTimestamp.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/wlatins/Trab-Programa-oII#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2"
   }
 }

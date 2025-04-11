@@ -6,11 +6,15 @@
     <title>Microsserviço de Timestamp</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='myTimestamp.js'></script>
+    <script src='main.js'></script>
 </head>
 <body>
     <div class="timestamp">
         <h1>Microsserviço de Timestamp</h1>
+        <form method="get" action="" onsubmit="updateUrl(this)">
+            <input type="text" id="date" value="" placeholder="Insira a Data">
+            <input type="submit" value="Enviar">
+        </form>
     </div>
 </body>
 </html>
